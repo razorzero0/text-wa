@@ -3,433 +3,115 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>WhatsApp Text Formatter</title>
-    <head>
-      <meta charset="UTF-8" />
-      <meta name="viewport" content="width=device-width, initial-scale=1.0" />
 
-      <!-- Primary Meta -->
-      <title>WA Formatter — Format Teks WhatsApp dengan Cepat</title>
-      <meta
-        name="description"
-        content="WA Formatter adalah alat online gratis untuk memformat teks WhatsApp menjadi tebal, miring, underline, coret, code, kutipan, bullet list, numbered list dengan preview real-time dan salin sekali klik."
-      />
-      <meta name="author" content="WA Formatter" />
-      <meta name="robots" content="index, follow" />
-      <link rel="canonical" href="https://wa-text.netlify.app/" />
-      <meta name="language" content="id" />
-      <meta name="theme-color" content="#25d366" />
+    <!-- Primary Meta -->
+    <title>WA Formatter — Format Teks WhatsApp dengan Cepat</title>
+    <link rel="stylesheet" href="assets/styles.css" />
+    <meta
+      name="description"
+      content="WA Formatter adalah alat online gratis untuk memformat teks WhatsApp menjadi tebal, miring, underline, coret, code, kutipan, bullet list, numbered list dengan preview real-time dan salin sekali klik."
+    />
+    <meta name="author" content="WA Formatter" />
+    <meta name="robots" content="index, follow" />
+    <link rel="canonical" href="https://wa-text.netlify.app/" />
+    <meta name="language" content="id" />
+    <meta name="theme-color" content="#25d366" />
 
-      <!-- Keywords (opsional, SEO modern tidak wajib) -->
-      <meta
-        name="keywords"
-        content="WhatsApp, WA formatter, format teks WhatsApp, bold WA, italic WA, text formatter, chat styling"
-      />
+    <!-- Keywords (opsional, SEO modern tidak wajib) -->
+    <meta
+      name="keywords"
+      content="WhatsApp, WA formatter, format teks WhatsApp, bold WA, italic WA, text formatter, chat styling"
+    />
 
-      <!-- Favicon & Icons -->
-      <link rel="icon" type="image/x-icon" href="/assets/favicon.ico" />
-      <link
-        rel="icon"
-        type="image/png"
-        sizes="16x16"
-        href="/assets/favicon-16x16.png"
-      />
-      <link
-        rel="icon"
-        type="image/png"
-        sizes="32x32"
-        href="/assets/favicon-32x32.png"
-      />
-      <link rel="apple-touch-icon" href="/assets/apple-touch-icon.png" />
-      <link
-        rel="icon"
-        type="image/png"
-        sizes="192x192"
-        href="/assets/android-chrome-192x192.png"
-      />
-      <link
-        rel="icon"
-        type="image/png"
-        sizes="512x512"
-        href="/assets/android-chrome-512x512.png"
-      />
-      <link rel="manifest" href="/assets/site.webmanifest" />
+    <!-- Favicon & Icons -->
+    <link rel="icon" type="image/x-icon" href="/assets/img/favicon.ico" />
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="16x16"
+      href="/assets/img/favicon-16x16.png"
+    />
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="32x32"
+      href="/assets/img/favicon-32x32.png"
+    />
+    <link rel="apple-touch-icon" href="/assets/img/apple-touch-icon.png" />
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="192x192"
+      href="/assets/img/android-chrome-192x192.png"
+    />
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="512x512"
+      href="/assets/img/android-chrome-512x512.png"
+    />
+    <link rel="manifest" href="/assets/img/site.webmanifest" />
 
-      <!-- Open Graph / Facebook -->
-      <meta property="og:type" content="website" />
-      <meta property="og:locale" content="id_ID" />
-      <meta
-        property="og:title"
-        content="WA Formatter — Format Teks WhatsApp dengan Cepat"
-      />
-      <meta
-        property="og:description"
-        content="Format teks WhatsApp jadi bold, italic, underline, strikethrough, code block, kutipan, bullet dan numbered list dengan preview real-time & salin sekali klik."
-      />
-      <meta property="og:url" content="https://wa-text.netlify.app/" />
-      <meta property="og:site_name" content="WA Formatter" />
-      <meta
-        property="og:image"
-        content="https://wa-text.netlify.app/assets/android-chrome-512x512.png"
-      />
-      <meta
-        property="og:image:alt"
-        content="WA Formatter — Format Teks WhatsApp"
-      />
+    <!-- Open Graph / Facebook -->
+    <meta property="og:type" content="website" />
+    <meta property="og:locale" content="id_ID" />
+    <meta
+      property="og:title"
+      content="WA Formatter — Format Teks WhatsApp dengan Cepat"
+    />
+    <meta
+      property="og:description"
+      content="Format teks WhatsApp jadi bold, italic, underline, strikethrough, code block, kutipan, bullet dan numbered list dengan preview real-time & salin sekali klik."
+    />
+    <meta property="og:url" content="https://wa-text.netlify.app/" />
+    <meta property="og:site_name" content="WA Formatter" />
+    <meta
+      property="og:image"
+      content="https://wa-text.netlify.app/assets/img/android-chrome-512x512.png"
+    />
+    <meta
+      property="og:image:alt"
+      content="WA Formatter — Format Teks WhatsApp"
+    />
 
-      <!-- Twitter Card -->
-      <meta name="twitter:card" content="summary_large_image" />
-      <meta
-        name="twitter:title"
-        content="WA Formatter — Format Teks WhatsApp dengan Cepat"
-      />
-      <meta
-        name="twitter:description"
-        content="Format teks WhatsApp jadi bold, italic, underline, strikethrough, code block, kutipan, bullet dan numbered list dengan preview real-time & salin sekali klik."
-      />
-      <meta
-        name="twitter:image"
-        content="https://wa-text.netlify.app/assets/android-chrome-512x512.png"
-      />
+    <!-- Twitter Card -->
+    <meta name="twitter:card" content="summary_large_image" />
+    <meta
+      name="twitter:title"
+      content="WA Formatter — Format Teks WhatsApp dengan Cepat"
+    />
+    <meta
+      name="twitter:description"
+      content="Format teks WhatsApp jadi bold, italic, underline, strikethrough, code block, kutipan, bullet dan numbered list dengan preview real-time & salin sekali klik."
+    />
+    <meta
+      name="twitter:image"
+      content="https://wa-text.netlify.app/assets/img/android-chrome-512x512.png"
+    />
 
-      <!-- Structured Data (JSON-LD) -->
-      <script type="application/ld+json">
-        {
-          "@context": "https://schema.org",
-          "@type": "WebSite",
-          "url": "https://wa-text.netlify.app/",
+    <!-- Structured Data (JSON-LD) -->
+    <script type="application/ld+json">
+      {
+        "@context": "https://schema.org",
+        "@type": "WebSite",
+        "url": "https://wa-text.netlify.app/",
+        "name": "WA Formatter",
+        "description": "Alat online gratis untuk memformat teks WhatsApp (bold, italic, underline, strikethrough, monospace, quote, list) dengan preview real-time.",
+        "publisher": {
+          "@type": "Organization",
           "name": "WA Formatter",
-          "description": "Alat online gratis untuk memformat teks WhatsApp (bold, italic, underline, strikethrough, monospace, quote, list) dengan preview real-time.",
-          "publisher": {
-            "@type": "Organization",
-            "name": "WA Formatter",
-            "logo": {
-              "@type": "ImageObject",
-              "url": "https://wa-text.netlify.app/assets/android-chrome-192x192.png"
-            }
-          },
-          "potentialAction": {
-            "@type": "SearchAction",
-            "target": "https://wa-text.netlify.app/?q={search_term_string}",
-            "query-input": "required name=search_term_string"
+          "logo": {
+            "@type": "ImageObject",
+            "url": "https://wa-text.netlify.app/assets/img/android-chrome-192x192.png"
           }
-        }
-      </script>
-    </head>
-
-    <style>
-      * {
-        margin: 0;
-        padding: 0;
-        box-sizing: border-box;
-      }
-
-      body {
-        font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
-        background: linear-gradient(135deg, #25d366, #128c7e);
-        min-height: 100vh;
-        padding: 20px;
-      }
-
-      .container {
-        max-width: 1200px;
-        margin: 0 auto;
-        background: white;
-        border-radius: 20px;
-        box-shadow: 0 20px 40px rgba(0, 0, 0, 0.1);
-        overflow: hidden;
-      }
-
-      .header {
-        background: linear-gradient(135deg, #25d366, #128c7e);
-        color: white;
-        padding: 20px;
-        text-align: center;
-      }
-
-      .header h1 {
-        font-size: 28px;
-        margin-bottom: 10px;
-        font-weight: 600;
-      }
-
-      .header p {
-        opacity: 0.9;
-        font-size: 16px;
-        color: white;
-      }
-
-      .main-content {
-        display: grid;
-        grid-template-columns: 1fr 1fr;
-        min-height: 600px;
-      }
-
-      .editor-panel {
-        padding: 30px;
-        border-right: 2px solid #f0f0f0;
-      }
-
-      .preview-panel {
-        padding: 30px;
-        background: #f8f9fa;
-      }
-
-      .panel-title {
-        font-size: 20px;
-        font-weight: 600;
-        margin-bottom: 20px;
-        color: #333;
-        display: flex;
-        align-items: center;
-        gap: 10px;
-      }
-
-      .panel-title::before {
-        content: "";
-        width: 4px;
-        height: 20px;
-        background: #25d366;
-        border-radius: 2px;
-      }
-
-      .toolbar {
-        display: grid;
-        grid-template-columns: repeat(auto-fit, minmax(120px, 1fr));
-        gap: 10px;
-        margin-bottom: 20px;
-        padding: 15px;
-        background: #f8f9fa;
-        border-radius: 12px;
-        border: 1px solid #e0e0e0;
-      }
-
-      .toolbar-btn {
-        background: white;
-        border: 2px solid #e0e0e0;
-        border-radius: 8px;
-        padding: 8px 12px;
-        cursor: pointer;
-        font-size: 13px;
-        font-weight: 500;
-        color: #333;
-        transition: all 0.2s ease;
-        text-align: center;
-        display: flex;
-        align-items: center;
-        justify-content: center;
-        gap: 5px;
-        min-height: 36px;
-      }
-
-      .toolbar-btn:hover {
-        background: #25d366;
-        color: white;
-        border-color: #25d366;
-        transform: translateY(-1px);
-      }
-
-      .toolbar-btn.active {
-        background: #128c7e;
-        color: white;
-        border-color: #128c7e;
-      }
-
-      .input-area {
-        width: 100%;
-        min-height: 300px;
-        padding: 20px;
-        border: 2px solid #e0e0e0;
-        border-radius: 12px;
-        font-size: 16px;
-        font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
-        line-height: 1.6;
-        resize: vertical;
-        outline: none;
-        transition: border-color 0.2s ease;
-      }
-
-      .input-area:focus {
-        border-color: #25d366;
-        box-shadow: 0 0 0 3px rgba(37, 211, 102, 0.1);
-      }
-
-      .preview-area {
-        background: white;
-        border: 2px solid #e0e0e0;
-        border-radius: 12px;
-        padding: 20px;
-        min-height: 300px;
-        font-size: 16px;
-        line-height: 1.6;
-        word-wrap: break-word;
-      }
-
-      .preview-area p {
-        margin: 0;
-      }
-
-      .preview-area .empty-line {
-        height: 1.6em;
-      }
-
-      .wa-format {
-        font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
-      }
-
-      .wa-format .bold {
-        font-weight: bold;
-      }
-
-      .wa-format .italic {
-        font-style: italic;
-      }
-
-      .wa-format .strikethrough {
-        text-decoration: line-through;
-      }
-
-      .wa-format .monospace {
-        font-family: "Courier New", monospace;
-        background-color: #f0f0f0;
-        padding: 2px 4px;
-        border-radius: 3px;
-      }
-
-      .wa-format .quote {
-        border-left: 4px solid #25d366;
-        padding-left: 10px;
-        margin: 10px 0;
-        background-color: #f8f9fa;
-        border-radius: 0 8px 8px 0;
-        white-space: pre-wrap;
-      }
-
-      .wa-format .underline {
-        text-decoration: underline;
-      }
-
-      .wa-format ul,
-      .wa-format ol {
-        margin: 10px 0;
-        padding-left: 20px;
-      }
-
-      .wa-format li {
-        margin: 5px 0;
-      }
-
-      .format-help {
-        margin-top: 20px;
-        padding: 15px;
-        background: #e8f5e8;
-        border-radius: 8px;
-        font-size: 13px;
-        color: #2d5a2d;
-      }
-
-      .format-help h4 {
-        margin-bottom: 10px;
-        color: #1a4d1a;
-      }
-
-      .format-help code {
-        background: white;
-        padding: 2px 6px;
-        border-radius: 4px;
-        font-family: monospace;
-      }
-
-      .stats {
-        display: flex;
-        justify-content: space-between;
-        align-items: center;
-        margin-top: 15px;
-        padding: 10px 15px;
-        background: #f8f9fa;
-        border-radius: 8px;
-        font-size: 13px;
-        color: #666;
-      }
-
-      .copy-btn {
-        background: #25d366;
-        color: white;
-        border: none;
-        padding: 12px 24px;
-        border-radius: 8px;
-        cursor: pointer;
-        font-size: 14px;
-        font-weight: 600;
-        margin-top: 15px;
-        transition: all 0.2s ease;
-        display: flex;
-        align-items: center;
-        gap: 8px;
-        justify-content: center;
-      }
-
-      .copy-btn:hover {
-        background: #128c7e;
-        transform: translateY(-1px);
-      }
-
-      .copy-btn.copied {
-        background: #34c759;
-      }
-
-      @media (max-width: 768px) {
-        .main-content {
-          grid-template-columns: 1fr;
-        }
-
-        .editor-panel {
-          border-right: none;
-          border-bottom: 2px solid #f0f0f0;
-        }
-
-        .toolbar {
-          grid-template-columns: repeat(auto-fit, min-content);
-          gap: 8px;
-        }
-
-        .toolbar-btn {
-          font-size: 12px;
-          padding: 6px 8px;
+        },
+        "potentialAction": {
+          "@type": "SearchAction",
+          "target": "https://wa-text.netlify.app/?q={search_term_string}",
+          "query-input": "required name=search_term_string"
         }
       }
-
-      .emoji-section {
-        margin-top: 15px;
-      }
-
-      .emoji-grid {
-        display: grid;
-        grid-template-columns: repeat(auto-fill, minmax(40px, 1fr));
-        gap: 5px;
-        margin-top: 10px;
-      }
-
-      .emoji-btn {
-        background: white;
-        border: 1px solid #e0e0e0;
-        border-radius: 6px;
-        padding: 8px;
-        cursor: pointer;
-        font-size: 18px;
-        text-align: center;
-        transition: all 0.2s ease;
-        aspect-ratio: 1;
-        display: flex;
-        align-items: center;
-        justify-content: center;
-      }
-
-      .emoji-btn:hover {
-        background: #25d366;
-        transform: scale(1.1);
-      }
-    </style>
+    </script>
   </head>
   <body>
     <div class="container">
@@ -587,405 +269,20 @@ __Garis bawah__ untuk underline
         </div>
       </div>
     </div>
-
-    <script>
-      let textInput = document.getElementById("textInput");
-      let preview = document.getElementById("preview");
-
-      function saveToSessionStorage() {
-        sessionStorage.setItem("textInput", textInput.value);
-      }
-
-      function loadFromSessionStorage() {
-        const savedText = sessionStorage.getItem("textInput");
-        if (savedText !== null) {
-          textInput.value = savedText;
-          updatePreview();
-        }
-      }
-
-      function updatePreview() {
-        let text = textInput.value;
-        saveToSessionStorage(); // Tambahkan baris ini untuk menyimpan input
-
-        if (!text.trim()) {
-          preview.innerHTML =
-            '<div style="color: #666; text-align: center; padding: 40px 20px;">Preview akan muncul di sini saat Anda mengetik...</div>';
-          updateStats(text);
-          return;
-        }
-
-        let formattedText = text
-          .replace(/&/g, "&amp;")
-          .replace(/</g, "&lt;")
-          .replace(/>/g, "&gt;");
-
-        const lines = formattedText.split("\n");
-        let resultHtml = "";
-        let inList = false;
-        let listType = "";
-
-        lines.forEach((line) => {
-          const trimmedLine = line.trim();
-          const isLineEmpty = line === "";
-
-          if (inList && isLineEmpty) {
-            resultHtml += `</${listType}>`;
-            inList = false;
-          }
-
-          if (isLineEmpty) {
-            resultHtml += '<p class="empty-line"></p>';
-            return;
-          }
-
-          // Check for list items
-          if (/^\d+\./.test(trimmedLine)) {
-            if (!inList || listType !== "numbered") {
-              if (inList) resultHtml += `</${listType}>`;
-              resultHtml += "<ol>";
-              inList = true;
-              listType = "numbered";
-            }
-            const content = line.replace(/^\s*\d+\.\s*/, "").trim();
-            resultHtml += `<li>${content}</li>`;
-          } else if (
-            trimmedLine.startsWith("•") ||
-            trimmedLine.startsWith("-")
-          ) {
-            if (!inList || listType !== "bullet") {
-              if (inList) resultHtml += `</${listType}>`;
-              resultHtml += "<ul>";
-              inList = true;
-              listType = "bullet";
-            }
-            const content = line.replace(/^\s*[•\-]\s*/, "").trim();
-            resultHtml += `<li>${content}</li>`;
-          }
-          // Check for quote block
-          else if (trimmedLine.startsWith("&gt;")) {
-            if (inList) {
-              resultHtml += `</${listType}>`;
-              inList = false;
-            }
-            const content = line.replace(/^\s*&gt;\s*/, "").trim();
-            resultHtml += `<div class="quote">${content}</div>`;
-          }
-          // Regular line
-          else {
-            if (inList) {
-              resultHtml += `</${listType}>`;
-              inList = false;
-            }
-            resultHtml += `<p>${line}</p>`;
-          }
-        });
-
-        if (inList) {
-          resultHtml += `</${listType}>`;
-        }
-
-        // Order matters: Process monospace first, then underline, bold, italic, strikethrough
-        resultHtml = resultHtml
-          .replace(
-            /```([^\s`][^`]*[^\s`])```/g,
-            '<span class="monospace">$1</span>'
-          )
-          .replace(
-            /__([^\s_][^_]*[^\s_])__/g,
-            '<span class="underline">$1</span>'
-          )
-          .replace(/\*([^\s*][^*]*[^\s*])\*/g, '<span class="bold">$1</span>')
-          .replace(/_([^\s_][^_]*[^\s_])_/g, '<span class="italic">$1</span>')
-          .replace(
-            /~([^\s~][^~]*[^\s~])~/g,
-            '<span class="strikethrough">$1</span>'
-          );
-
-        preview.innerHTML = resultHtml;
-        updateStats(text);
-      }
-
-      function updateStats(text) {
-        document.getElementById("charCount").textContent = text.length;
-        document.getElementById("wordCount").textContent = text.trim()
-          ? text.trim().split(/\s+/).length
-          : 0;
-        document.getElementById("lineCount").textContent =
-          text.split("\n").length;
-      }
-
-      function applyFormat(format) {
-        let start = textInput.selectionStart;
-        let end = textInput.selectionEnd;
-        let currentText = textInput.value;
-        let selection = currentText.substring(start, end);
-
-        const formatMap = {
-          bold: { prefix: "*", suffix: "*", template: "" },
-          italic: { prefix: "_", suffix: "_", template: "" },
-          strikethrough: { prefix: "~", suffix: "~", template: "" },
-          underline: { prefix: "__", suffix: "__", template: "" },
-          monospace: { prefix: "```", suffix: "```", template: "" },
-          quote: { prefix: "> ", suffix: "", template: "" },
-          bullet: { prefix: "• ", suffix: "", template: "" },
-          numbered: { prefix: "1. ", suffix: "", template: "item" },
-        };
-
-        const formatConfig = formatMap[format];
-        let newText;
-
-        if (selection.length === 0) {
-          newText =
-            formatConfig.prefix + formatConfig.template + formatConfig.suffix;
-        } else if (
-          format === "bullet" ||
-          format === "numbered" ||
-          format === "quote"
-        ) {
-          const lines = selection.split("\n");
-          const formattedLines = lines.map((line) => {
-            const trimmedLine = line.trim();
-            const isFormatted = trimmedLine.startsWith(
-              formatConfig.prefix.trim()
-            );
-            const isNumbered =
-              format === "numbered" && /^\d+\./.test(trimmedLine);
-
-            if (isFormatted || isNumbered) {
-              return line.replace(formatConfig.prefix, "").trim();
-            } else {
-              return formatConfig.prefix + trimmedLine;
-            }
-          });
-          newText = formattedLines.join("\n");
-        } else {
-          const trimmedSelection = selection.trim();
-          const isAlreadyFormatted =
-            trimmedSelection.startsWith(formatConfig.prefix) &&
-            trimmedSelection.endsWith(formatConfig.suffix);
-
-          if (isAlreadyFormatted) {
-            newText = trimmedSelection.slice(
-              formatConfig.prefix.length,
-              -formatConfig.suffix.length
-            );
-          } else {
-            newText = `${formatConfig.prefix}${selection}${formatConfig.suffix}`;
-          }
-        }
-
-        textInput.value =
-          currentText.slice(0, start) + newText + currentText.slice(end);
-        textInput.focus();
-
-        if (selection.length === 0) {
-          const cursorPosition =
-            start + formatConfig.prefix.length + formatConfig.template.length;
-          textInput.setSelectionRange(cursorPosition, cursorPosition);
-        } else {
-          textInput.setSelectionRange(start, start + newText.length);
-        }
-
-        updatePreview();
-      }
-
-      function insertEmoji(emoji) {
-        let start = textInput.selectionStart;
-        let end = textInput.selectionEnd;
-
-        const before = textInput.value.substring(0, start);
-        const after = textInput.value.substring(end);
-
-        textInput.value = before + emoji + after;
-        textInput.setSelectionRange(start + emoji.length, start + emoji.length);
-        textInput.focus();
-        updatePreview();
-      }
-
-      function clearText() {
-        if (confirm("Hapus semua teks?")) {
-          textInput.value = "";
-          updatePreview();
-          textInput.focus();
-        }
-      }
-
-      function handlePaste(event) {
-        event.preventDefault();
-
-        const clipboardData = event.clipboardData || window.clipboardData;
-
-        let pastedText = clipboardData.getData("text/plain");
-        const htmlText = clipboardData.getData("text/html");
-
-        if (htmlText) {
-          const tempDiv = document.createElement("div");
-          tempDiv.innerHTML = htmlText;
-
-          // Regular expression to identify formatted text
-          const formattedRegex = new RegExp(
-            `(<(b|strong)>[^<]+</(b|strong)>)|(<(i|em)>[^<]+</(i|em)>)|(<(u)>[^<]+</(u)>)|(<(s|del)>[^<]+</(s|del)>)|(<(code|pre)>[^<]+</(code|pre)>)`,
-            "g"
-          );
-
-          // Find and replace HTML tags with their markdown equivalents
-          const formattedMapping = {
-            b: "*",
-            strong: "*",
-            i: "_",
-            em: "_",
-            u: "__",
-            s: "~",
-            del: "~",
-            code: "```",
-            pre: "```",
-          };
-
-          let tempPastedText = pastedText;
-
-          // This regex is complex and may not handle all cases perfectly.
-          // A simpler, more reliable approach is to use plain text as the source of truth.
-          // We'll stick to a simpler, more direct approach that handles the core issue.
-
-          // New logic: trust plainText for structure, use a DOM parser for formatting.
-          const parser = new DOMParser();
-          const doc = parser.parseFromString(htmlText, "text/html");
-
-          const getMarkdownFromNode = (node) => {
-            let markdown = "";
-            node.childNodes.forEach((child) => {
-              if (child.nodeType === Node.TEXT_NODE) {
-                markdown += child.nodeValue;
-              } else if (child.nodeType === Node.ELEMENT_NODE) {
-                const tag = child.tagName.toLowerCase();
-                const content = getMarkdownFromNode(child);
-                switch (tag) {
-                  case "b":
-                  case "strong":
-                    markdown += `*${content}*`;
-                    break;
-                  case "i":
-                  case "em":
-                    markdown += `_${content}_`;
-                    break;
-                  case "u":
-                    markdown += `__${content}__`;
-                    break;
-                  case "s":
-                  case "del":
-                    markdown += `~${content}~`;
-                    break;
-                  case "code":
-                  case "pre":
-                    markdown += `\`\`\`${content}\`\`\``;
-                    break;
-                  case "li":
-                    const parentTag = child.parentNode.tagName.toLowerCase();
-                    const marker =
-                      parentTag === "ul"
-                        ? "•"
-                        : Array.from(child.parentNode.children).indexOf(child) +
-                          1 +
-                          ".";
-                    markdown += `${marker} ${content}\n`;
-                    break;
-                  case "p":
-                    // Handle paragraph new lines correctly
-                    markdown += content + "\n\n";
-                    break;
-                  default:
-                    markdown += content;
-                }
-              }
-            });
-            return markdown.trim();
-          };
-
-          pastedText = getMarkdownFromNode(doc.body).trim();
-        }
-
-        let start = textInput.selectionStart;
-        let end = textInput.selectionEnd;
-        let currentText = textInput.value;
-
-        textInput.value =
-          currentText.slice(0, start) + pastedText + currentText.slice(end);
-        textInput.setSelectionRange(
-          start + pastedText.length,
-          start + pastedText.length
-        );
-
-        updatePreview();
-      }
-
-      async function copyToClipboard() {
-        let text = textInput.value;
-        if (!text.trim()) {
-          alert("Tidak ada teks untuk disalin!");
-          return;
-        }
-
-        try {
-          await navigator.clipboard.writeText(text);
-
-          let btn = document.querySelector(".copy-btn");
-          let originalText = btn.innerHTML;
-          btn.innerHTML = "✅ Berhasil Disalin!";
-          btn.classList.add("copied");
-
-          setTimeout(() => {
-            btn.innerHTML = originalText;
-            btn.classList.remove("copied");
-          }, 2000);
-        } catch (err) {
-          textInput.select();
-          document.execCommand("copy");
-          alert("Teks berhasil disalin ke clipboard!");
-        }
-      }
-
-      textInput.addEventListener("keydown", function (e) {
-        if (e.ctrlKey || e.metaKey) {
-          switch (e.key) {
-            case "b":
-              e.preventDefault();
-              applyFormat("bold");
-              break;
-            case "i":
-              e.preventDefault();
-              applyFormat("italic");
-              break;
-            case "u":
-              e.preventDefault();
-              applyFormat("underline");
-              break;
-          }
-        } else if (e.key === "Enter") {
-          let start = textInput.selectionStart;
-          let beforeText = textInput.value.substring(0, start);
-          let lines = beforeText.split("\n");
-          let currentLine = lines[lines.length - 1];
-
-          if (/^\s*(\d+)\.\s/.test(currentLine.trim())) {
-            e.preventDefault();
-            let match = currentLine.trim().match(/^(\s*)(\d+)\.\s/);
-            let number = parseInt(match[2]) + 1;
-            let newLine = `\n${match[1]}${number}. `;
-            textInput.setRangeText(newLine, start, start, "end");
-            setTimeout(updatePreview, 10);
-          } else if (/^\s*[•\-]\s/.test(currentLine.trim())) {
-            e.preventDefault();
-            let match = currentLine.trim().match(/^(\s*)[•\-]\s/);
-            let newLine = `\n${match[1]}• `;
-            textInput.setRangeText(newLine, start, start, "end");
-            setTimeout(updatePreview, 10);
-          }
-        }
-      });
-
-      // Panggil fungsi ini saat halaman dimuat
-      loadFromSessionStorage();
-    </script>
+    <footer class="footer">
+      <div class="footer-container">
+        <p>
+          Dibuat dengan ❤️ oleh
+          <a
+            href="https://www.linkedin.com/in/muhammad-ainun-yanuar-syam/"
+            target="_blank"
+            rel="noopener noreferrer"
+            >Ainun</a
+          >
+          &copy; 2024
+        </p>
+      </div>
+    </footer>
+    <script src="assets/script.js"></script>
   </body>
 </html>
