@@ -1,12 +1,12 @@
 let textInput = document.getElementById("textInput");
 let preview = document.getElementById("preview");
 
-function saveToSessionStorage() {
-  sessionStorage.setItem("textInput", textInput.value);
+function saveToLocalStorage() {
+  localStorage.setItem("textInput", textInput.value);
 }
 
-function loadFromSessionStorage() {
-  const savedText = sessionStorage.getItem("textInput");
+function loadFromLocalStorage() {
+  const savedText = localStorage.getItem("textInput");
   if (savedText !== null) {
     textInput.value = savedText;
     updatePreview();
@@ -15,7 +15,7 @@ function loadFromSessionStorage() {
 
 function updatePreview() {
   let text = textInput.value;
-  saveToSessionStorage(); // Tambahkan baris ini untuk menyimpan input
+  saveToLocalStorage(); // Tambahkan baris ini untuk menyimpan input
 
   if (!text.trim()) {
     preview.innerHTML =
@@ -377,4 +377,4 @@ textInput.addEventListener("keydown", function (e) {
 });
 
 // Panggil fungsi ini saat halaman dimuat
-loadFromSessionStorage();
+loadFromLocalStorage();
